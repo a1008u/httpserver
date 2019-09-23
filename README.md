@@ -1,5 +1,9 @@
 # httpserver
 
+> dockerとnginxを利用して、LBの管理とHTTPサーバの動きを学ぶ
+
+![docker nginx](https://raw.githubusercontent.com/a1008u/httpserver/image/overview.png "サンプル")
+
 ```
 docker-compose up --build
 ```
