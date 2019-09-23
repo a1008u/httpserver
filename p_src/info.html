@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Banquet Halls and Wedding Venues | ReceptionHalls.com</title>
+  <meta name="api-base-url" content="https://www.receptionhalls.com" />
+  <meta name="robots" content="all">
+  <meta name="keywords" content="banquet halls, wedding venues, affordable venues, reception halls, party, halls for rent, wedding reception, banquet" />
+  <meta name="csrf-token" content="FF1KJMh8qe0OaiG0pjI1OqrZryorX3GLFv9j87io">
+  <link rel="apple-touch-icon" sizes="180x180" href="https://www.receptionhalls.com/images/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="https://www.receptionhalls.com/images/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="https://www.receptionhalls.com/images/favicon/favicon-16x16.png">
+  <link rel="manifest" href="https://www.receptionhalls.com/images/favicon/site.webmanifest">
+  <link rel="mask-icon" href="https://www.receptionhalls.com/images/favicon/safari-pinned-tab.svg" color="#5bbad5">
+  <link rel="shortcut icon" href="https://www.receptionhalls.com/favicon.ico">
+  <meta name="msapplication-TileColor" content="#2b5797">
+  <meta name="theme-color" content="#ffffff">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/MaterialDesign-Webfont/4.4.95/css/materialdesignicons.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.min.css">
+  <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+</head>
+<body>
+  <div id="app" class="container is-widescreen">
+    <nav class="navbar has-shadow" role="navigation" aria-label="main navigation">
+      <div class="navbar-brand">
+        <a class="navbar-item" href="https://www.receptionhalls.com">
+            <img src="https://www.receptionhalls.com/images/logo.svg" width="160px" alt="ReceptionHalls.com Logo"/>
+        </a>
+        <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" @click="showNav = !showNav" :class="{ 'is-active': showNav }">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+        </a>
+      </div>
+
+      <div class="navbar-menu" :class="{ 'is-active': showNav }">
+        <div class="navbar-start">
+          <div class="navbar-item has-dropdown is-hoverable is-mega is-hidden-mobile"> <a class="navbar-link">Venues by State</a>
+            <div class="navbar-dropdown is-size-6" style="width: 18rem;">
+              <!-- <a href="https://www.receptionhalls.com/banquet-halls" class="navbar-item">Local Banquet Halls Near You</a> -->
+              <ul class="states-mega">
+                <li><a href="https://www.receptionhalls.com/banquet-halls/MT">Montana</a></li>
+                <li><a href="https://www.receptionhalls.com/banquet-halls/NE">Nebraska</a></li>
+                <li><a href="https://www.receptionhalls.com/banquet-halls/NV">Nevada</a></li>
+                <li><a href="https://www.receptionhalls.com/banquet-halls/NH">New Hampshire</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="navbar-end">
+          <div class="navbar-item">
+            <search-by-name></search-by-name>
+          </div>
+          <div class="navbar-item">
+            <div class="buttons"> <a href="https://www.receptionhalls.com/advertising" class="button is-success">
+                <strong>Advertise Your Venue</strong>
+            </a>
+              <!-- <a class="button is-light"> Sign In </a> --></div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <main id="content">
+      <div class="wrapper">
+        <section id="search-box" class="section intro has-text-centered">
+          <h1 class="title is-2">TEST用 - Pページ - </h1>
+        </section>
+
+        <section class="section">
+          <div class="venue-showcase" v-show="premiumVisible">
+            <div class="columns is-multiline">
+              <div class="column is-12-mobile is-4-tablet is-4-desktop">
+                <div class="card is-shadowless is-slightly-rounded">
+                  <div class="card-image">
+                    <figure class="image">
+                      <a href="https://www.receptionhalls.com/venue/park-savoy-florham-park-nj">
+                        <img src="/media/NJ/148/park-savoy-florham-park-nj_3x2.jpg" alt="Park Savoy" class="is-slightly-rounded" />
+                      </a>
+                    </figure>
+                  </div>
+                  <div class="card-content">
+                    <div class="content">
+                      <p>
+                        <span class="title is-4 is-capitalized">
+                          <a class="has-text-black" href="https://www.receptionhalls.com/venue/park-savoy-florham-park-nj">Park Savoy</a>
+                        </span>
+                        <br>
+                        <span class="m-t-tiny block">Florham Park, NJ</span>
+                      </p>
+                      <p class="venue-data-sm">Welcome to The Park Savoy. Since 1982, we have pursued a single goal: to create a setting for weddings warmed by...</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="column is-12-mobile is-4-tablet is-4-desktop">
+                <div class="card is-shadowless is-slightly-rounded">
+                  <div class="card-image">
+                    <figure class="image">
+                      <a href="https://www.receptionhalls.com/venue/naninas-in-the-park-belleville-nj">
+                        <img src="/media/NJ/9839/naninas-in-the-park-belleville-nj_3x2.jpg" alt="Nanina&#039;s In The Park" class="is-slightly-rounded" />
+                      </a>
+                    </figure>
+                  </div>
+                  <div class="card-content">
+                    <div class="content">
+                      <p>
+                        <span class="title is-4 is-capitalized">
+                          <a class="has-text-black" href="https://www.receptionhalls.com/venue/naninas-in-the-park-belleville-nj">Nanina&#039;s In The Park</a>
+                        </span>
+                        <br>
+                        <span class="m-t-tiny block">Belleville, NJ</span>
+                      </p>
+                      <p class="venue-data-sm">Nanina&#039;s In The Park … a magnificent New Jersey landmark, nestled in a historical park setting. Nanina’s presents...</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="column is-12-mobile is-4-tablet is-4-desktop">
+                <div class="card is-shadowless is-slightly-rounded">
+                  <div class="card-image">
+                    <figure class="image">
+                      <a href="https://www.receptionhalls.com/venue/park-chateau-estate-and-gardens-east-brunswick-nj">
+                        <img src="/media/NJ/11753/park-chateau-estate-and-gardens-east-brunswick-nj_3x2.jpg" alt="Park Chateau Estate and Gardens" class="is-slightly-rounded" />
+                      </a>
+                    </figure>
+                  </div>
+                  <div class="card-content">
+                    <div class="content">
+                      <p>
+                        <span class="title is-4 is-capitalized">
+                          <a class="has-text-black" href="https://www.receptionhalls.com/venue/park-chateau-estate-and-gardens-east-brunswick-nj">Park Chateau Estate And Gardens</a>
+                        </span>
+                        <br>
+                        <span class="m-t-tiny block">East Brunswick, NJ</span>
+                      </p>
+                      <p class="venue-data-sm">Visualize your once in a lifetime wedding day as you might if you stepped into a classic French Romance Novel. The...</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="venue-showcase" v-show="showcaseVisible">
+            <div class="columns is-multiline">
+              <!-- 定額(fixedamount) -->
+              <div class="column is-12-mobile is-6-tablet is-3-desktop">
+                <div class="card is-shadowless is-slightly-rounded">
+                  <div class="card-image">
+                    <figure class="image">
+                      <a href="http://localhost:8080/m/lp/fixedamount/introduce.html">
+                        <img src="/media/NJ/10798/sterling-ballroom-at-the-doubletree-tinton-falls-nj-eatontown-nj_3x2.jpg" alt="Sterling Ballroom at the DoubleTree Tinton Falls NJ" class="is-slightly-rounded" />
+                      </a>
+                    </figure>
+                  </div>
+                  <div class="card-content">
+                    <div class="content">
+                      <p> <span class="title is-4 is-capitalized">
+                        <a class="has-text-black" href="http://localhost:8080/m/lp/fixedamount/introduce.html">[定額]Sterling Ballroom At The DoubleTree Tinton Falls NJ</a>
+                      </span>
+                      <br>
+                      <span class="m-t-tiny block">Eatontown, NJ</span>
+                    </p>
+                    <p class="venue-data-sm">At the Sterling Ballroom of the DoubleTree Tinton Falls, NJ, we want to make your next occasion a flawless event. We...</p>
+                  </div>
+                </div>
+              </div>
+              </div>
+              <div class="column is-12-mobile is-6-tablet is-3-desktop">
+                <div class="card is-shadowless is-slightly-rounded">
+                  <div class="card-image">
+                    <figure class="image">
+                      <a href="http://localhost:8080/m/lp/fixedamount/introduce.html">
+                        <img src="/media/TX/10832/seven-for-parties-dallas-tx_3x2.jpg" alt="Seven for Parties" class="is-slightly-rounded" />
+                      </a>
+                    </figure>
+                  </div>
+                  <div class="card-content">
+                    <div class="content">
+                      <p>
+                        <span class="title is-4 is-capitalized">
+                          <a class="has-text-black" href="http://localhost:8080/m/lp/fixedamount/introduce.html">[定額]Seven For Parties</a>
+                        </span>
+                        <br>
+                        <span class="m-t-tiny block">Dallas, TX</span>
+                      </p>
+                      <p class="venue-data-sm"> Flexible, Fun and a little Funky – that’s Seven for Parties. Located in the Dallas Design District, Seven for... </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="column is-12-mobile is-6-tablet is-3-desktop">
+                <div class="card is-shadowless is-slightly-rounded">
+                  <div class="card-image">
+                    <figure class="image">
+                      <a href="http://localhost:8080/m/lp/fixedamount/introduce.html">
+                        <img src="/media/NY/10084/manhattan-penthouse-on-5th-avenue-new-york-ny_3x2.jpg" alt="Manhattan Penthouse on 5th Avenue" class="is-slightly-rounded" />
+                      </a>
+                    </figure>
+                  </div>
+                  <div class="card-content">
+                    <div class="content">
+                      <p>
+                        <span class="title is-4 is-capitalized">
+                          <a class="has-text-black" href="http://localhost:8080/m/lp/fixedamount/introduce.html">[定額]Manhattan Penthouse On 5th Avenue</a>
+                        </span>
+                        <br>
+                        <span class="m-t-tiny block">New York, NY</span>
+                      </p>
+                      <p class="venue-data-sm"> Just walking into the Reception Room at Manhattan Penthouse is a surprise for guests who are struck by the immediacy of... </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="column is-12-mobile is-6-tablet is-3-desktop">
+                <div class="card is-shadowless is-slightly-rounded">
+                  <div class="card-image">
+                    <figure class="image">
+                      <a href="http://localhost:8080/m/lp/fixedamount/introduce.html">
+                        <img src="/media/CA/11135/holiday-inn-ontario-airport-hotel-ontario-ca_3x2.jpg" alt="Holiday Inn Ontario Airport Hotel" class="is-slightly-rounded" />
+                      </a>
+                    </figure>
+                  </div>
+                  <div class="card-content">
+                    <div class="content">
+                      <p>
+                        <span class="title is-4 is-capitalized">
+                          <a class="has-text-black" href="http://localhost:8080/m/lp/fixedamount/introduce.html">[定額]Holiday Inn Ontario Airport Hotel</a>
+                        </span>
+                        <br>
+                        <span class="m-t-tiny block">Ontario, CA</span>
+                      </p>
+                      <p class="venue-data-sm"> ~Upon entering our hotel you will be greeted with modern, sophisticated style and friendly employees. ~Spacious foyer... </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- 売上 -->
+              <div class="column is-12-mobile is-6-tablet is-3-desktop">
+                <div class="card is-shadowless is-slightly-rounded">
+                  <div class="card-image">
+                    <figure class="image"> 
+                      <a href="http://localhost:8080/m/lp/sale/introduce.html">
+                        <img src="/media/NJ/11150/hilton-garden-inn-ridgefield-park-ridgefield-park-nj_3x2.jpg" alt="Hilton Garden Inn Ridgefield Park" class="is-slightly-rounded" />
+                      </a>
+                    </figure>
+                  </div>
+                  <div class="card-content">
+                    <div class="content">
+                      <p>
+                        <span class="title is-4 is-capitalized">
+                          <a class="has-text-black" href="http://localhost:8080/m/lp/sale/introduce.html">[売上]Hilton Garden Inn Ridgefield Park</a>
+                        </span>
+                        <br>
+                        <span class="m-t-tiny block">Ridgefield Park, NJ</span>
+                      </p>
+                      <p class="venue-data-sm"> Whether you’re planning a wedding, celebrating a graduation or getting together for a family reunion, HGI has the... </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="column is-12-mobile is-6-tablet is-3-desktop">
+                <div class="card is-shadowless is-slightly-rounded">
+                  <div class="card-image">
+                    <figure class="image">
+                      <a href="http://localhost:8080/m/lp/sale/introduce.html">
+                        <img src="/media/NJ/9629/windsor-ballroom-at-the-holiday-inn-of-east-windsor-hightstown-nj_3x2.jpg" alt="Windsor Ballroom at the Holiday Inn of East Windsor" class="is-slightly-rounded" />
+                      </a>
+                    </figure>
+                  </div>
+                  <div class="card-content">
+                    <div class="content">
+                      <p>
+                        <span class="title is-4 is-capitalized">
+                          <a class="has-text-black" href="http://localhost:8080/m/lp/sale/introduce.html">[売上]Windsor Ballroom At The Holiday Inn Of East Windsor</a>
+                        </span>
+                        <br>
+                        <span class="m-t-tiny block">Hightstown, NJ</span>
+                      </p>
+                      <p class="venue-data-sm"> At the Windsor Ballroom at the Holiday Inn East Windsor, we believe in bringing extravagant beauty to each and every... </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="column is-12-mobile is-6-tablet is-3-desktop">
+                <div class="card is-shadowless is-slightly-rounded">
+                  <div class="card-image">
+                    <figure class="image">
+                      <a href="http://localhost:8080/m/lp/sale/introduce.html">
+                        <img src="/media/NJ/9636/versailles-ballroom-at-the-ramada-inn-of-toms-river-toms-river-nj_3x2.jpg" alt="Versailles Ballroom at the Ramada Inn of Toms River" class="is-slightly-rounded" />
+                      </a>
+                    </figure>
+                  </div>
+                  <div class="card-content">
+                    <div class="content">
+                      <p>
+                        <span class="title is-4 is-capitalized">
+                          <a class="has-text-black" href="http://localhost:8080/m/lp/sale/introduce.html">[売上]Versailles Ballroom At The Ramada Inn Of Toms River</a>
+                        </span>
+                        <br>
+                        <span class="m-t-tiny block">Toms River, NJ</span>
+                      </p>
+                      <p class="venue-data-sm"> The Versailles Ballroom at the Ramada Toms River is an Ocean County favorite for weddings, bar/bat mitzvahs, sweet... </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="column is-12-mobile is-6-tablet is-3-desktop">
+                <div class="card is-shadowless is-slightly-rounded">
+                  <div class="card-image">
+                    <figure class="image">
+                      <a href="http://localhost:8080/m/lp/sale/introduce.html">
+                        <img src="/media/NJ/9672/crystal-ballroom-at-the-radisson-freehold-freehold-nj_3x2.jpg" alt="Crystal Ballroom at Radisson Freehold" class="is-slightly-rounded" />
+                      </a>
+                    </figure>
+                  </div>
+                  <div class="card-content">
+                    <div class="content">
+                      <p>
+                        <span class="title is-4 is-capitalized">
+                          <a class="has-text-black" href="http://localhost:8080/m/lp/sale/introduce.html">[売上]Crystal Ballroom At Radisson Freehold</a>
+                        </span>
+                        <br>
+                        <span class="m-t-tiny block">Freehold, NJ</span>
+                      </p>
+                      <p class="venue-data-sm"> The Crystal Ballroom at the Radisson Freehold, is a beautiful Monmouth County banquet hall that is the perfect location... </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- 個別 -->
+              <div class="column is-12-mobile is-6-tablet is-3-desktop">
+                  <div class="card is-shadowless is-slightly-rounded">
+                    <div class="card-image">
+                      <figure class="image"> 
+                        <a href="http://localhost:8080/m/lp/individual/introduce.html">
+                          <img src="/media/NJ/11150/hilton-garden-inn-ridgefield-park-ridgefield-park-nj_3x2.jpg" alt="Hilton Garden Inn Ridgefield Park" class="is-slightly-rounded" />
+                        </a>
+                      </figure>
+                    </div>
+                    <div class="card-content">
+                      <div class="content">
+                        <p>
+                          <span class="title is-4 is-capitalized">
+                            <a class="has-text-black" href="http://localhost:8080/m/lp/individual/introduce.html">[個別]Hilton Garden Inn Ridgefield Park</a>
+                          </span>
+                          <br>
+                          <span class="m-t-tiny block">Ridgefield Park, NJ</span>
+                        </p>
+                        <p class="venue-data-sm"> Whether you’re planning a wedding, celebrating a graduation or getting together for a family reunion, HGI has the... </p>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+              <div class="column is-12-mobile is-6-tablet is-3-desktop">
+                <div class="card is-shadowless is-slightly-rounded">
+                  <div class="card-image">
+                    <figure class="image">
+                      <a href="http://localhost:8080/m/lp/individual/introduce.html">
+                        <img src="/media/NJ/9629/windsor-ballroom-at-the-holiday-inn-of-east-windsor-hightstown-nj_3x2.jpg" alt="Windsor Ballroom at the Holiday Inn of East Windsor" class="is-slightly-rounded" />
+                      </a>
+                    </figure>
+                  </div>
+                  <div class="card-content">
+                    <div class="content">
+                      <p>
+                        <span class="title is-4 is-capitalized">
+                          <a class="has-text-black" href="http://localhost:8080/m/lp/individual/introduce.html">[個別]Windsor Ballroom At The Holiday Inn Of East Windsor</a>
+                        </span>
+                        <br>
+                        <span class="m-t-tiny block">Hightstown, NJ</span>
+                      </p>
+                      <p class="venue-data-sm"> At the Windsor Ballroom at the Holiday Inn East Windsor, we believe in bringing extravagant beauty to each and every... </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="column is-12-mobile is-6-tablet is-3-desktop">
+                <div class="card is-shadowless is-slightly-rounded">
+                  <div class="card-image">
+                    <figure class="image">
+                      <a href="http://localhost:8080/m/lp/individual/introduce.html">
+                        <img src="/media/NJ/9636/versailles-ballroom-at-the-ramada-inn-of-toms-river-toms-river-nj_3x2.jpg" alt="Versailles Ballroom at the Ramada Inn of Toms River" class="is-slightly-rounded" />
+                      </a>
+                    </figure>
+                  </div>
+                  <div class="card-content">
+                    <div class="content">
+                      <p>
+                        <span class="title is-4 is-capitalized">
+                          <a class="has-text-black" href="http://localhost:8080/m/lp/individual/introduce.html">[個別]Versailles Ballroom At The Ramada Inn Of Toms River</a>
+                        </span>
+                        <br>
+                        <span class="m-t-tiny block">Toms River, NJ</span>
+                      </p>
+                      <p class="venue-data-sm"> The Versailles Ballroom at the Ramada Toms River is an Ocean County favorite for weddings, bar/bat mitzvahs, sweet... </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="column is-12-mobile is-6-tablet is-3-desktop">
+                <div class="card is-shadowless is-slightly-rounded">
+                  <div class="card-image">
+                    <figure class="image">
+                      <a href="http://localhost:8080/m/lp/individual/introduce.html">
+                        <img src="/media/NJ/9672/crystal-ballroom-at-the-radisson-freehold-freehold-nj_3x2.jpg" alt="Crystal Ballroom at Radisson Freehold" class="is-slightly-rounded" />
+                      </a>
+                    </figure>
+                  </div>
+                  <div class="card-content">
+                    <div class="content">
+                      <p>
+                        <span class="title is-4 is-capitalized">
+                          <a class="has-text-black" href="http://localhost:8080/m/lp/individual/introduce.html">[個別]Crystal Ballroom At Radisson Freehold</a>
+                        </span>
+                        <br>
+                        <span class="m-t-tiny block">Freehold, NJ</span>
+                      </p>
+                      <p class="venue-data-sm"> The Crystal Ballroom at the Radisson Freehold, is a beautiful Monmouth County banquet hall that is the perfect location... </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <section id="featured-content">
+            <div class="tile is-ancestor">
+              <div class="tile is-vertical is-8">
+                <div class="tile">
+                  <div class="tile is-parent is-vertical">
+                    <article class="tile is-child notification is-primary">
+                      <a href="https://www.receptionhalls.com/starting-your-banquet-hall-search-5-simple-steps">
+                        <h2 class="title">5 Things to Consider When Starting Your Banquet Hall Search</h2>
+                        <p>
+                          <b-icon icon="format-list-checkbox" size="is-medium"></b-icon>
+                        </p>
+                      </a>
+                    </article>
+                    <article class="tile is-child notification is-warning">
+                      <a href="https://www.receptionhalls.com/banquet-halls">
+                        <h2 class="title">Find Local Banquet Halls Near You</h2>
+                        <p>
+                          <b-icon icon="map-search-outline" size="is-medium"></b-icon>
+                        </p>
+                      </a>
+                    </article>
+                  </div>
+                  <div class="tile is-parent">
+                    <article class="tile is-child notification is-grey">
+                      <a href="https://www.receptionhalls.com/5-things-to-consider-when-planning-an-outdoor-banquet">
+                        <h2 class="title is-spaced">5 Things To Consider When Planning an Outdoor Banquet</h2>
+                        <figure class="image is-4by3"> <img src="/images/guides/tent.jpg" alt="outdoor banquet reception with tent"> </figure>
+                      </a>
+                    </article>
+                  </div>
+                </div>
+
+                <div class="tile is-parent">
+                  <article class="tile is-child notification is-grey">
+                    <h2 class="title is-spaced">Banquet Hall Deals and Special Offers</h2>
+                    <div class="content">
+                      <a href="https://www.receptionhalls.com/venue/immaculate-reception-events-justin-tx">
+                        <p class="m-t-lg"> <span class="is-capitalized"><b>Early Bird Savings</b></span> at Immaculate Reception &amp; Events in Justin, TX<br> <b>Ends: </b>1 month from now<br> We are now booking for November 2019 and 2020. If you book your event during our construction, you w... </p>
+                      </a>
+                      <a href="https://www.receptionhalls.com/venue/pine-mountain-club-chalets-pine-mountain-ga">
+                        <p class="m-t-lg"> <span class="is-capitalized"><b>$500 discount</b></span> at Pine Mountain Club Chalets in Pine Mountain, GA<br> <b>Ends: </b>1 month from now<br> Receive a $500 discount off on any wedding package book to take place during 2019! </p>
+                      </a>
+                      <a href="https://www.receptionhalls.com/venue/holiday-inn-palmdale-ca">
+                        <p class="m-t-lg"> <span class="is-capitalized"><b>20% off Room Rental</b></span> at Holiday Inn - Palmdale in Palmdale, CA<br> <b>Ends: </b>1 month from now<br> Mention this add and receive 20% off the venue room rental. </p>
+                      </a>
+                      <a href="https://www.receptionhalls.com/venue/equl-estate-indio-ca">
+                        <p class="m-t-lg"> <span class="is-capitalized"><b>Band New 9 Acre Beach Club in Indio, CA</b></span> at Equl Estate in Indio, CA<br> <b>Ends: </b>2 months from now<br> We just opened up our brand new beach club venue just ten minutes away from the Coachella event grou... </p>
+                      </a>
+                      <a href="https://www.receptionhalls.com/venue/the-hall-austell-ga">
+                        <p class="m-t-lg"> <span class="is-capitalized"><b>10% off any event</b></span> at The Hall in Austell, GA<br> <b>Ends: </b>2 months from now<br> Call us today!!! and mention you saw our listing on Reception Halls and you&#039;ll receive 10% off of yo... </p>
+                      </a>
+                      <p class="m-t-lg"><a style="text-decoration: underline" href="https://www.receptionhalls.com/deals">More banquet hall deals and special offers</a> &raquo;</p>
+                    </div>
+                    </a>
+                  </article>
+                </div>
+              </div>
+
+              <div class="tile is-parent">
+                <article class="tile is-child notification is-success">
+                  <div class="content">
+                    <h2 class="title is-spaced">We Have Banquet Halls Listed in All Major US Cities</h2>
+                    <div class="content">
+                      <!-- <ul class="content cities-list"> -->
+                      <ul>
+                        <li><a href="https://www.receptionhalls.com/banquet-halls/GA/Atlanta">Atlanta Banquet Halls</a></li>
+                        <li><a href="https://www.receptionhalls.com/banquet-halls/MD/Baltimore">Baltimore Banquet Halls</a></li>
+                        <li><a href="https://www.receptionhalls.com/banquet-halls/TX/Austin">Austin Banquet Halls</a></li>
+                        </li>
+                        <li><a href="https://www.receptionhalls.com/banquet-halls/MA/Boston">Boston Banquet Halls</a></li>
+                        </li>
+                        <li><a href="https://www.receptionhalls.com/banquet-halls/NY/Brooklyn">Brooklyn Banquet Halls</a></li>
+                        <li><a href="https://www.receptionhalls.com/banquet-halls/NY/Bronx">Bronx Banquet Halls</a></li>
+                        <li><a href="https://www.receptionhalls.com/banquet-halls/IL/Chicago">Chicago Banquet Halls</a></li>
+                        <li><a href="https://www.receptionhalls.com/banquet-halls/TX/Dallas">Dallas Banquet Halls</a></li>
+                        <li><a href="https://www.receptionhalls.com/banquet-halls/MI/Detroit">Detroit Banquet Halls</a></li>
+                        <li><a href="https://www.receptionhalls.com/banquet-halls/HI">Hawaii Banquet Halls</a></li>
+                        <li><a href="https://www.receptionhalls.com/banquet-halls/TX/Houston">Houston Banquet Halls</a></li>
+                        <li><a href="https://www.receptionhalls.com/banquet-halls/NJ/Jersey%20City">Jersey City Banquet Halls</a></li>
+                        <li><a href="https://www.receptionhalls.com/banquet-halls/NV/Las%20Vegas">Las Vegas Banquet Halls</a></li>
+                        <li><a href="https://www.receptionhalls.com/banquet-halls/CA/South%20Lake%20Tahoe">Lake Tahoe Banquet Halls</a></li>
+                        <li><a href="https://www.receptionhalls.com/banquet-halls/NY/Riverhead">Long Island Banquet Halls</a></li>
+                        <li><a href="https://www.receptionhalls.com/banquet-halls/CA/Los%20Angeles">Los Angeles Banquet Halls</a></li>
+                        <li><a href="https://www.receptionhalls.com/banquet-halls/CA/Monterey">Monterey Banquet Halls</a></li>
+                        <li><a href="https://www.receptionhalls.com/banquet-halls/NJ">New Jersey Banquet Halls</a></li>
+                        <li><a href="https://www.receptionhalls.com/banquet-halls/NY/New%20York">New York City Banquet Halls</a></li>
+                        <li><a href="https://www.receptionhalls.com/banquet-halls/PA/Philadelphia">Philadelphia Banquet Halls</a></li>
+                        <li><a href="https://www.receptionhalls.com/banquet-halls/OR/Portland">Portland Banquet Halls</a></li>
+                        <li><a href="https://www.receptionhalls.com/banquet-halls/NY/Astoria">Queens Banquet Halls</a></li>
+                        <li><a href="https://www.receptionhalls.com/banquet-halls/CA/Sacramento">Sacramento Banquet Halls</a></li>
+                        <li><a href="https://www.receptionhalls.com/banquet-halls/TX/San%20Antonio">San Antonio Banquet Halls</a></li>
+                        <li><a href="https://www.receptionhalls.com/banquet-halls/CA/San%20Diego">San Diego Banquet Halls</a></li>
+                        <li><a href="https://www.receptionhalls.com/banquet-halls/CA/San%20Francisco">San Francisco Banquet Halls</a></li>
+                        <li><a href="https://www.receptionhalls.com/banquet-halls/CA/San%20Jose">San Jose Banquet Halls</a></li>
+                        <li><a href="https://www.receptionhalls.com/banquet-halls/CA/Santa%20Barbara">Santa Barbara Banquet Halls</a></li>
+                        <li><a href="https://www.receptionhalls.com/banquet-halls/WA/Seattle">Seattle Banquet Halls</a></li>
+                        <li><a href="https://www.receptionhalls.com/banquet-halls/NY/Staten%20Island">Staten Island Banquet Halls</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </article>
+              </div>
+            </div>
+          </section>
+        </section>
+      </div>
+    </main>
+
+    <footer id="footer">
+      <section class="section footer">
+        <div class="container is-fullhd">
+          <div class="columns is-12-mobile is-12-tablet">
+            <div class="column is-5">
+              <p class="footer-title">About Us</p>
+              <ul class="footer-list">
+                <li> Since 1999 we've helped millions of brides, families and event planners find affordable and dream banquet halls and wedding venues. Our goal is to make the process of finding a banquet hall easier and hopefully save you some time and money along the way. Congratulations on taking the first step towards a successful reception! </li>
+              </ul>
+            </div>
+            <div class="column is-3 is-offset-1">
+              <p class="footer-title">Connect With Us</p>
+              <ul class="footer-list">
+                <li><a href="https://twitter.com/receptionhalls">@ReceptionHalls  on Twitter</a></li>
+              </ul>
+            </div>
+            <div class="column is-3">
+              <p class="footer-title">Venue Managers and Owners</p>
+              <ul class="footer-list">
+                <!-- <li><a href="https://www.receptionhalls.com/wedding-reception-ideas">Wedding Reception Ideas</a></li> -->
+                <li><a href="/owners">Login To Your Account</a></li>
+                <li><a href="/claim">Claim Your Venue</a></li>
+                <li><a href="/advertising">Add Your Venue</a></li>
+                <li><a href="/contact">Email Us</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="sub-footer">
+            <p>
+              <small>
+              © 1999-2019 ReceptionHalls.com, All rights reserved. • <a href="https://www.receptionhalls.com/terms">Terms of Use</a> • <a href="https://www.receptionhalls.com/privacy">Privacy Policy</a>
+              </small>
+            </p>
+          </div>
+        </div>
+      </section>
+    </footer>
+  </div>
+  <script src="/js/app.js?id=1ac08f12f1bd4e3577cb"></script>
+</body>
+</html>
