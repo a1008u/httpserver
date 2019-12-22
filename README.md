@@ -53,3 +53,12 @@ http {
     -  include /etc/nginx/conf.d/*.conf;
 }
 ```
+
+
+[直接Pへのアクセス](http://localhost:8081/p/info.html)  
+[nginxのロードバランサ経由のPへのアクセス](http://localhost:8080/p/info.html)  
+  
+[直接pythonサーバにアクセス](http://localhost:8083/index.html)  
+[nginxのロードバランサ経由のpythonサーバにアクセス](http://localhost:8080/pyhtml/index.html)  
+  
+[直接pythonサーバにアクセス](http://localhost:8084/)  

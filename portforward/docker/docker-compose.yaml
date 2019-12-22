@@ -19,31 +19,6 @@ services:
     networks:
       - network_LB_back_2
 
-  l_server3:
-    build:
-      context: .
-      dockerfile: DockerfilePython
-    ports:
-      - "8083:80"
-    hostname: web_python
-    deploy:
-      replicas: 1
-    networks:
-      - network_LB_back_3
-
-  # l_server4:
-  #   build:
-  #     context: .
-  #     dockerfile: DockerfilePython2
-  #   ports:
-  #     - "8084:80"
-  #   hostname: web_python_flask
-  #   deploy:
-  #     replicas: 1
-  #   networks:
-  #     - network_LB_back_4
-
-
   lb:
     build: .
     ports:
@@ -52,8 +27,6 @@ services:
       - default
       - network_LB_back_1
       - network_LB_back_2
-      - network_LB_back_3
-      # - network_LB_back_4
 
 networks:
   network_LB_front:
@@ -62,10 +35,6 @@ networks:
     external: true
   network_LB_back_2:
     external: true
-  network_LB_back_3:
-    external: true
-  # network_LB_back_4:
-  #   external: true
 
   # web:
   #   image: nginx
