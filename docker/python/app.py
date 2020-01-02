@@ -9,9 +9,9 @@ import json
 
 app = Flask(__name__)
 
-@app.route('/')
+@app.route('/hello')
 def index():
-    content = "Hello world'"
+    content = "Hello world"
 
     # make_responseでレスポンスオブジェクトを生成する
     response = make_response(content)
@@ -19,7 +19,7 @@ def index():
     # Cookieの設定を行う
     max_age = 60 * 60 * 24 * 120 # 120 days
     expires = int(datetime.datetime.now().timestamp()) + max_age
-    response.set_cookie('uid', value="**ユーザーIDなど**", max_age=max_age, expires=expires, path='/', secure=None, httponly=True, samesite="Lax")
+    response.set_cookie('uid', value="**ユーザーIDなど**", max_age=max_age, expires=expires, path='/', secure=None, httponly=True, samesite=None)
 
     # レスポンスを返す
     return response
@@ -28,6 +28,18 @@ def index():
 def api():
     print(request.headers.get("Host"))
     print(request.environ)
+
+
+    content = "Hello world'"
+    # make_responseでレスポンスオブジェクトを生成する
+    response = make_response(content)
+
+    # Cookieの設定を行う
+    max_age = 60 * 60 * 24 * 120 # 120 days
+    expires = int(datetime.datetime.now().timestamp()) + max_age
+    response.set_cookie('uid', value="**ユーザーIDなど**", max_age=max_age, expires=expires, path='/', secure=None, httponly=True, samesite="Lax")
+
+
     return jsonify({'ip': request.environ.get('HTTP_X_REAL_IP', request.remote_addr)}), 200
 
 if __name__ == '__main__':

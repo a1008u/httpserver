@@ -17,7 +17,7 @@ docker-compose up --build
 docker network ls
 docker network create --subnet=192.168.3.0/24 network_LB_front
 docker network create --subnet=192.168.4.0/24 network_LB_back_1;
-docker network create --subnet=192.168.5.0/24 network_LB_back_2;
+docker network create g--subnet=192.168.5.0/24 network_LB_back_2;
 docker network ls
 
 docker network create --driver bridge shared
@@ -61,4 +61,9 @@ http {
 [直接pythonサーバにアクセス](http://localhost:8083/index.html)  
 [nginxのロードバランサ経由のpythonサーバにアクセス](http://localhost:8080/pyhtml/index.html)  
   
-[直接pythonサーバにアクセス](http://localhost:8084/)  
+[直接pythonサーバにアクセス](http://localhost:8084/hello)  
+[ginxのロードバランサ経由のpythonサーバ(flask)にアクセス](http://localhost:8888/pyflask/hello)  
+[ginxのロードバランサ経由のpythonサーバ(flask)にアクセス](http://localhost:8880/pyflask/hello)  
+
+web_python_flask
+http://web_python_flask/hello
